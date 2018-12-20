@@ -1,0 +1,14 @@
+<div class="margentarjeta">
+    <form>
+        <div class="form-group">
+            <label for="formGroupUsuario">Usuario</label>
+            <input #inputUsuario type="text" class="form-control" id="formGroupUsuario" placeholder="Example input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupContraseña">Contraseña</label>
+            <input #inputContraseña type="password" class="form-control" id="formGroupContraseña" placeholder="Example input">
+        </div>
+        <button type="submit" (click)="login()" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+<!-- [value]="trabajo.comentario" (change)="trabajo.comentario=inputComentario.value"-->

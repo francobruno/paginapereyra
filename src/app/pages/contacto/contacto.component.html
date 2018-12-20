@@ -1,0 +1,18 @@
+<div class="margentarjeta">
+    <h4 class="text-center">Envíenos su consulta y nosotros nos comunicaremos con ud.</h4>
+    <form>
+        <div class="form-group">
+            <label for="formGroupEmisorContacto">De</label>
+            <input #inputEmisor [value]="contacto.emisor" (change)="contacto.emisor=inputEmisor.value" type="email" class="form-control" id="formGroupEmisorContacto" placeholder="De">
+        </div>
+        <div class="form-group">
+            <label for="formGroupAsuntoContacto">Asunto</label>
+            <input #inputAsunto [value]="contacto.asunto" (change)="contacto.asunto=inputAsunto.value" type="text" class="form-control" id="formGroupAsuntoContacto" placeholder="Asunto">
+        </div>
+        <div class="form-group">
+            <label for="formGroupCuerpoContacto">Texto</label>
+            <textarea #inputCuerpo [value]="contacto.cuerpo" (change)="contacto.cuerpo=inputCuerpo.value" class="form-control" id="FormGroupCuerpoContacto" rows="5"></textarea>
+        </div>
+        <button type="button" (click)="enviarContacto()" class="btn btn-primary">Enviar</button>
+    </form>
+</div>

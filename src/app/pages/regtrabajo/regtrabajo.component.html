@@ -1,0 +1,16 @@
+<div class="margentarjeta">
+    <form>
+        <div class="form-group">
+            <label for="formGroupTitulo">Título</label>
+            <input #inputTitulo [value]="trabajo.titulo" (change)="trabajo.titulo=inputTitulo.value" type="text" class="form-control" id="formGroupTitulotrabajo" placeholder="Example input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupComentario">Comentario</label>
+            <textarea #inputComentario [value]="trabajo.comentario" (change)="trabajo.comentario=inputComentario.value" class="form-control" id="FormGroupComentariotrabajo" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="file" (change)="onArchivoSeleccionado($event)">
+        </div>
+        <button type="button" (click)="guardarTrabajos()" class="btn btn-primary">Enviar</button>
+    </form>
+</div>

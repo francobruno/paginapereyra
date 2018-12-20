@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/*cambio personalizado de navar*/
+
+nav.navbar {
+    background-color: rgb(189, 2, 2);
+}
+
+footer.footer {
+    background-color: rgb(189, 2, 2);
+}
+
+body {
+    background-color: rgb(255, 245, 112) !important;
+}
+
+.margentarjeta {
+    margin-top: 10px
+}
+
+.micolor {
+    background-color: rgb(189, 2, 2) !important;
+}

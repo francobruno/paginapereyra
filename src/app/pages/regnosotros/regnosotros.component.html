@@ -1,0 +1,13 @@
+<div class="margentarjeta">
+    <form>
+        <div class="form-group">
+            <label for="formGroupTitulo">Título</label>
+            <input #inputTitulo [value]="nosotros.titulonosotros" (change)="nosotros.titulonosotros=inputTitulo.value" type="text" class="form-control" id="formGroupTitulo" placeholder="Example input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupComentario">Comentario</label>
+            <textarea #inputComentario [value]="nosotros.comentarionosotros" (change)="nosotros.comentarionosotros=inputComentario.value" class="form-control" id="FormGroupComentario" rows="3"></textarea>
+        </div>
+        <button type="button" (click)="guardarNosotros()" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
